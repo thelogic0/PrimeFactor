@@ -12,7 +12,7 @@ TEST(PrimeFactors, Of1)
 TEST(PrimeFactors, Of2)
 {
 	PrimeFactors prime_factor;
-	vector<int> expected = {2};
+	vector<int> expected = { 2 };
 	EXPECT_EQ(expected, prime_factor.of(2));
 }
 
@@ -54,7 +54,7 @@ TEST(PrimeFactors, Of7)
 TEST(PrimeFactors, Of8)
 {
 	PrimeFactors prime_factor;
-	vector<int> expected = { 2, 4 };
+	vector<int> expected = { 2 , 2, 2 };
 	EXPECT_EQ(expected, prime_factor.of(8));
 }
 
@@ -70,4 +70,18 @@ TEST(PrimeFactors, Of10)
 	PrimeFactors prime_factor;
 	vector<int> expected = { 2, 5 };
 	EXPECT_EQ(expected, prime_factor.of(10));
+}
+
+TEST(PrimeFactors, Of11)
+{
+	PrimeFactors prime_factor;
+	vector<int> expected = { 11 };
+	EXPECT_EQ(expected, prime_factor.of(11));
+}
+
+TEST(PrimeFactors, Of12)
+{
+	PrimeFactors prime_factor;
+	vector<int> expected = { 2, 2, 3 };
+	EXPECT_EQ(expected, prime_factor.of(12));
 }
